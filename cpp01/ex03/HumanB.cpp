@@ -8,6 +8,8 @@ HumanB::HumanB(const std::string &name) : _name(name)
 
 void    HumanB::setWeapon(Weapon& weapon) {
     this->_weapon = &weapon;
+    if(!_weapon)
+        this->_weapon = NULL;
 }
 
 void    HumanB::attack() const{
