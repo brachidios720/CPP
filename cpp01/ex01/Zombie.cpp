@@ -3,7 +3,7 @@
 #include <string>
 
 Zombie::Zombie() {
-    std::cout << _name << ": created !" << std::endl;
+    std::cout << "A new zombie is created !" << std::endl;
 }
 
 void    Zombie::annouce() const

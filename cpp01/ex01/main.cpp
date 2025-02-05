@@ -5,9 +5,9 @@ int main(void){
 
     int N = 10;
 
-    std::cout << "creat order of zombie..." << std::endl;
+    std::cout << "creat order of " << N << " zombie..." << std::endl;
 
-    Zombie* horder = zombieHorde(N, "Horder");
+    Zombie* horder = zombieHorde(N, "HorderZombie");
 
     if(horder)
     {

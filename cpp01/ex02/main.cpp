@@ -12,8 +12,8 @@
 int main(void)
 {
     std::string      str = "HI THIS IS BRAIN";
-    std::string&     strr = str; 
     std::string*     strp = &str;
+    std::string&     strr = str; 
 
     std::cout << "---------------------------------------------------" << std::endl;
 	std::cout << MEMORY_ADRESS << STR << &str << std::endl;
