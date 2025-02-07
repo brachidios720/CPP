@@ -19,12 +19,12 @@ bool    swapElements(const std::string &filname, const std::string &s1, const st
 
     std::string outputFile = filname + ".replace";
 
-    std::ifstream input(filname);
+    std::ifstream input(filname.c_str());
     if(!input){
         std::cerr << "Error cannot open file" << filname << std::endl;
         return(false);
     }
-    std::ofstream  output(outputFile);
+    std::ofstream  output(outputFile.c_str());
     if(!output){
         std::cerr << "Error cannot creat file" << outputFile << std::endl;
         return(false);
@@ -41,7 +41,7 @@ bool    swapElements(const std::string &filname, const std::string &s1, const st
             else
                 linetoPut += line[i];
         }
-        output << linetoPut << std::endl;
+        output << linetoPut << std::endl;;;;;;;
         linetoPut.clear();
     }
     return(true);
