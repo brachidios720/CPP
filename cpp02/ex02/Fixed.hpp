@@ -38,7 +38,6 @@ class Fixed{
                 int getRawBits( void ) const;
                 float toFloat( void ) const;
                 int toInt( void ) const;
-                friend std::ostream &operator<<(std::ostream &out, const Fixed &fixed);
 
         private:
                 int _value;

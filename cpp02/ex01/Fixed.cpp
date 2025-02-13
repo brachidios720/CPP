@@ -48,10 +48,6 @@ int Fixed::toInt( void ) const{
     return(this->_value >> _fractionalBits);
 }
 
-std::ostream &operator<<(std::ostream &out, const Fixed &fixed){
-    return( out << fixed.toFloat());
-}
-
 Fixed::~Fixed(){
     std::cout << "Destructor Called" << std::endl;
 }

@@ -23,22 +23,22 @@ Fixed::Fixed(const Fixed &copy)
 
 //operator d'assigniation
 bool Fixed::operator<(const Fixed &copy) const{
-    return(this->_value < copy._value);
+    return(this->_value < copy.getRawBits());
 }
 bool Fixed::operator>(const Fixed &copy) const{
-    return(this->_value > copy._value);
+    return(this->_value > copy.getRawBits());
 }
 bool Fixed::operator>=(const Fixed &copy) const{
-    return(this->_value >= copy._value);
+    return(this->_value >= copy.getRawBits());
 }
 bool Fixed::operator<=(const Fixed &copy) const{
-    return(this->_value <= copy._value);
+    return(this->_value <= copy.getRawBits());
 }
 bool Fixed::operator==(const Fixed &copy) const{
-    return(this->_value == copy._value);
+    return(this->_value == copy.getRawBits());
 }
 bool Fixed::operator!=(const Fixed &copy) const{
-    return(this->_value != copy._value);
+    return(this->_value != copy.getRawBits());
 }
 
 
@@ -107,9 +107,6 @@ int Fixed::toInt( void ) const{
     return(this->_value >> _fractionalBits);
 }
 
-std::ostream &operator<<(std::ostream &out, const Fixed &fixed){
-    return( out << fixed.toFloat());
-}
 
 Fixed& Fixed::operator=(const Fixed &copy){
     std::cout << "Copy assignment operator called " << std::endl;
