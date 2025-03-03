@@ -30,7 +30,7 @@ static AForm *makePresidential(const std::string &target)
 
 AForm*  Intern::makeForm(const std::string &name, const std::string &target) const{
 
-    std::string FormNames[3] = {"shruberry creation", "robotomy request", "presidential pardon"};
+    std::string FormNames[3] = {"Shrubbery", "Robotomy", "Presidential"};
     AForm *(*formCreators[3])(const std::string &target) = {&makeShrubbery, &makeRobotomy, &makePresidential};
 
     for(int i = 0; i < 3 ; i++){

@@ -14,7 +14,9 @@ int main(){
         Intern random;
         AForm* Shrubbery;
 
-        Shrubbery = random.makeForm("Shubbery", "miam");
+        std::cout << std::endl;
+        
+        Shrubbery = random.makeForm("Shrubbery", "miam");
         if(Shrubbery){
             std::cout << *Shrubbery << std::endl;
             max.signForm(*Shrubbery);
@@ -22,6 +24,7 @@ int main(){
             delete Shrubbery;
         }
 
+        std::cout << std::endl;
         AForm *Robotomy;
         Robotomy = random.makeForm("Robotomy", "yes");
         if(Robotomy){
@@ -30,6 +33,7 @@ int main(){
             max.executeForm(*Robotomy);
             delete Robotomy;
         }
+        std::cout << std::endl;
         AForm* Presidential;
         Presidential = random.makeForm("Presidential", "pardon");
         if(Presidential){
@@ -38,11 +42,11 @@ int main(){
             max.executeForm(*Presidential);
             delete Presidential;
         }
+        std::cout << std::endl;
         AForm* notGood;
-
         notGood = random.makeForm("notGood", "error");
         if(!notGood){
-            std::cout << " error it's an unknow form" << std::endl;
+            std::cout << "error it's an unknow form" << std::endl;
         }
     } catch(const std::exception &e){
         std::cout << "Execption caught " << e.what() << std::endl;
