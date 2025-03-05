@@ -1,4 +1,4 @@
-NAME = prog
+NAME = Form_up,_maggots!
 
 CC = c++
 

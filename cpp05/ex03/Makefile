@@ -1,4 +1,4 @@
-NAME = prog
+NAME = At_least_this_beats_coffee-making
 
 CC = c++
 

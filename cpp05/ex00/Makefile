@@ -1,4 +1,4 @@
-NAME = prog
+NAME = Mommy,_when_I_grow_up,_I_want_to_be_a_bureaucrat!
 
 CC = c++
 

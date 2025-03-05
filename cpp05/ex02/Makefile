@@ -1,4 +1,4 @@
-NAME = prog
+NAME = No,_you_need_form_28B,_not_28C...
 
 CC = c++
 
