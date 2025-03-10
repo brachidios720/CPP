@@ -7,6 +7,6 @@ int main(){
 
     std::cout << std::endl;
 
-    const std::string  arraychar[] = {"bonjour", "je suis", "ici"};
-    iter(arraychar, 4, printchar);
+    std::string const arraychar[] = {"bonjour", "je suis", "ici"};
+    iter(arraychar, 3, printchar);
 }
